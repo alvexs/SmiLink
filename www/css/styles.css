@@ -1,0 +1,215 @@
+@import 'https://fonts.googleapis.com/css?family=Berkshire+Swash|BioRhyme+Expanded|Bungee|Caesar+Dressing|Fugaz+One|Holtwood+One+SC|Mogra|Pattaya|Quintessential|Sansita+One|Shrikhand|Stalinist+One|Ultra';
+@import 'https://fonts.googleapis.com/css?family=Lobster+Two';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+body {
+    margin: 0; /* no comments */
+}
+
+header {
+    font-family: 'Lobster Two'; 
+    font-size: 30px;
+    text-align: center;
+    margin-left: 30%;       /* want to do center-align site */
+    margin-right: 30%;
+    margin-top: 5px;
+}
+
+.smilink {
+    margin-right: 5px;
+    vertical-align: bottom;
+    font-size: 55px;
+}
+h1 {
+    margin: 0;
+}
+
+.wrapper {
+    margin-top: 40px;  
+    margin-bottom: 0px;   /* some markup */
+    margin-left: 13%;
+    margin-right: 15%;
+    overflow: auto;
+    max-height: 1010px;
+}
+@media screen and (max-device-width: 1280px) {
+    .wrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 1%;
+    }
+}
+.left-side {
+    float: left;
+    border-right: solid 1px lightgray;
+    padding-right: 1%;
+    width: 24.5%;
+    overflow: auto;
+    margin-left: 2%;*/
+}
+
+.message-container {
+    overflow-y: scroll;
+    height: 600px;
+    direction: ltr;
+}
+@media screen and (max-device-width: 1280px) {
+    .message-container {
+        height: 490px;
+    }
+
+.right-side {
+    float: left;
+    width: 69%;
+    margin-left: 3%;
+    overflow: auto;
+    overflow-y: hidden;
+    
+}
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track-piece {
+    
+}
+::-webkit-scrollbar-track {
+   
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: black;
+}
+
+article {
+    margin-top: 20px;
+}
+
+.user-list {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    float: right;
+    height: 600px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+@media screen and (max-device-width: 1280px) {
+    .user-list {
+        height: 490px;
+    }
+
+.user-list-profile {
+    margin-bottom: 30px;
+    overflow: auto;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+.user-avatar {
+   /* border: solid 1px black;*/
+    overflow: hidden;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.user-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 60%;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Raleway', serif;
+    margin-left: 15px;
+    font-style: normal;
+    vertical-align: 110%;
+}
+
+.user-list-profile:last-child {
+    margin-bottom: 0px;
+}
+
+.my-message-container {
+    width: 40%;
+    float: right;
+}
+.my-message {
+    width:  43.5%;
+    float: right;
+    margin-bottom: 5%;
+    border-top: solid 1px #1861FF;
+ /* border-bottom: solid 1px #1861FF; */
+    padding: 2%;
+    margin-right: 5%;
+    font-size: 16px;
+    font-family: 'Raleway', serif;
+    word-wrap: break-word;
+}
+.my-message:last-child {
+    padding-bottom: 7%;
+    margin-bottom: 0;
+    border-bottom: solid 0 #1861FF;
+}
+
+
+.companion-message-container {
+    width: 40%;
+    float: left;
+}
+.companion-message {
+    width: 43.5%;
+    float: left;
+    margin-bottom: 5%;
+/*  border-right: solid 1px black; */
+    border-bottom: solid 1px black;
+    padding: 2%;
+    margin-right: 11%;  
+    font-size: 16px;
+    font-family: 'Raleway', serif;
+    word-wrap: break-word;
+}
+.input-box {
+    max-height: 100px;
+    overflow: hidden;
+    
+    margin-top: 11%;
+    min-height: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 16px;
+    border-bottom: solid 1px black;
+    border-top: solid 1px #9aa2ab; 
+    font-size: 16px;
+    font-family: 'Raleway', serif;
+    word-wrap: break-word;
+}
+@media screen and (max-device-height: 960px) {
+    .input-box { max-height: 80px; min-height: 80px; margin-top: 5%;}
+}
+
+.content-input-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 80px;
+    min-height: 80px;
+}
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+outline:none;
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+        content: attr(placeholder);
+        color: #9aa2ab;
+        display: block;
+        margin-top: -1px;
+        margin-left: 1px;
+        pointer-events: none;
+    }

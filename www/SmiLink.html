@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SmiLinK</title>
+        <meta name="description" content="The first edge-working messenger. Simple and smart. Just try it!">
+        <meta charset="utf-8">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <span class="smilink">SmiLink</span>web
+        </header>
+        <div class="wrapper">
+            <aside class="left-side">
+                <ul class="user-list">
+                    <li class="user-list-profile"><img class="user-avatar" src="img/photo.jpg" alt="just user avatar"><span class="user-name">Kate</span></li>
+                    <li class="user-list-profile"><img class="user-avatar" src="img/avatar_60x60.png" alt="just user avatar"><span class="user-name">Sasha</span></li>
+                    <li class="user-list-profile"><img class="user-avatar" src="img/avatar_60x60.png" alt="just user avatar"><span class="user-name">Alex Ivannikovsfaafa asfsa</span></li>
+                    <li class="user-list-profile"><img class="user-avatar" src="img/avatar_60x60.png" alt="just user avatar"><span class="user-name">Alex Ivannikovsfaafa asfsa</span></li>
+                    <li class="user-list-profile"><img class="user-avatar" src="img/avatar_60x60.png" alt="just user avatar"><span class="user-name">Alex Ivannikovsfaafa asfsa</span></li>
+                    <li class="user-list-profile"><img class="user-avatar" src="img/avatar_60x60.png" alt="just user avatar"><span class="user-name">Alex Ivannikovsfaafa asfsa</span></li>
+                    <li class="user-list-profile"><img class="user-avatar" src="img/avatar_60x60.png" alt="just user avatar"><span class="user-name">Alex Ivannikovsfaafa asfsa</span></li>
+  
+                </ul>
+            </aside>
+            <aside class="right-side"> 
+                <div class="message-container">
+                    <div class="companion-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="companion-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="companion-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="my-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="my-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="my-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="my-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="my-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="my-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="my-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                    <div class="my-message">Hello yooo!! How are you? How you fell? WHATS Up?!?</div>
+                </div>
+                <div class="input-box">
+                    <div class="content-input-box" contenteditable="true" placeholder="Input your message here"></div>
+                </div>        
+            </aside>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function() {
+                    var elm = $('div.message-container');
+                    elm.scrollTop(elm.get(0).scrollHeight);
+                });
+        </script>
+    </body>
+</html>
